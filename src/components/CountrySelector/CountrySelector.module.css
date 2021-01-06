@@ -1,0 +1,17 @@
+.container {
+  /* border: solid; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.selector {
+  padding: 0.5em;
+  border-radius: 0.3em;
+  width: 25em;
+}
+.selector:hover {
+  cursor: pointer;
+}
+select {
+  background-color: black;
+}
