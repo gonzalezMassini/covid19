@@ -1,7 +1,6 @@
 .container {
   width: 90%;
-  max-width: 75em;
-  /* border: solid; */
+  max-width: 60em;
   display: flex;
   justify-content: center;
 }

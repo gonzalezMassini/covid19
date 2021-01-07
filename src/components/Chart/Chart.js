@@ -14,6 +14,7 @@ const Chart = ({ country, countryData }) => {
   }, []);
   const lineChart = dailyData.length ? (
     <Line
+      height={190}
       data={{
         labels: dailyData.map(({ reportDate }) => reportDate),
         datasets: [
@@ -66,13 +67,7 @@ const Chart = ({ country, countryData }) => {
   const barChart = countryData.length ? (
     <Bar
       data={{
-        // labels: ['Infected', 'Recovered', 'Deaths'],
         datasets: [
-          // {
-          //   label: ['Infected', 'Recovered', 'Deaths'],
-          //   backgroundColor: ['rgba(238, 130, 238, 0.5)', 'lightgreen', 'red'],
-          //   data: [countryData[0], countryData[1], countryData[2]],
-          // },
           {
             label: 'Infected',
             backgroundColor: 'rgba(238, 130, 238, 0.5)',
@@ -91,6 +86,8 @@ const Chart = ({ country, countryData }) => {
         ],
       }}
       options={{
+        responsive: true,
+        maintainAspectRatio: false,
         tooltips: {
           callbacks: {
             title: function () {
