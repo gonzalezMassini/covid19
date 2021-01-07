@@ -66,6 +66,7 @@ const Chart = ({ country, countryData }) => {
   ) : null;
   const barChart = countryData.length ? (
     <Bar
+      height={600}
       data={{
         datasets: [
           {
