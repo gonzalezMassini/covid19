@@ -14,7 +14,7 @@ const Chart = ({ country, countryData }) => {
   }, []);
   const lineChart = dailyData.length ? (
     <Line
-      height={190}
+      height={150}
       data={{
         labels: dailyData.map(({ reportDate }) => reportDate),
         datasets: [
@@ -66,7 +66,7 @@ const Chart = ({ country, countryData }) => {
   ) : null;
   const barChart = countryData.length ? (
     <Bar
-      height={600}
+      height={150}
       data={{
         datasets: [
           {
@@ -87,8 +87,8 @@ const Chart = ({ country, countryData }) => {
         ],
       }}
       options={{
-        responsive: true,
-        maintainAspectRatio: false,
+        // responsive: true,
+        // maintainAspectRatio: false,
         tooltips: {
           callbacks: {
             title: function () {
