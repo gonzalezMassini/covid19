@@ -14,7 +14,7 @@ const Chart = ({ country, countryData }) => {
   }, []);
   const lineChart = dailyData.length ? (
     <Line
-      height={150}
+      height={180}
       data={{
         labels: dailyData.map(({ reportDate }) => reportDate),
         datasets: [
