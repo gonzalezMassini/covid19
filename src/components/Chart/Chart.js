@@ -77,18 +77,16 @@ const Chart = ({ country, countryData }) => {
           {
             label: 'Recovered',
             backgroundColor: 'lightgreen',
-            data: [countryData[1]],
+            data: [countryData[2]],
           },
           {
             label: 'Deaths',
             backgroundColor: 'red',
-            data: [countryData[2]],
+            data: [countryData[1]],
           },
         ],
       }}
       options={{
-        // responsive: true,
-        // maintainAspectRatio: false,
         tooltips: {
           callbacks: {
             title: function () {
