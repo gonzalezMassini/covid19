@@ -29,8 +29,8 @@ const Cards = ({
       totalCount:
         country === 'Global'
           ? totalRecovered
-          : countryData[1]
-          ? countryData[1]
+          : countryData[2]
+          ? countryData[2]
           : 0,
       descriptionName: 'recoveredDescription',
       description: 'COVID-19 RECOVERED CASES',
@@ -41,8 +41,8 @@ const Cards = ({
       totalCount:
         country === 'Global'
           ? totalDeaths
-          : countryData[2]
-          ? countryData[2]
+          : countryData[1]
+          ? countryData[1]
           : 0,
       descriptionName: 'deathsDescription',
       description: 'DEATHS CAUSED BY COVID-19',

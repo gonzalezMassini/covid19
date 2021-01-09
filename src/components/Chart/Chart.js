@@ -72,7 +72,7 @@ const Chart = ({ country, countryData }) => {
           {
             label: 'Infected',
             backgroundColor: 'rgba(238, 130, 238, 0.5)',
-            data: [{ x: 'Infected', y: countryData[0] }],
+            data: [countryData[0]],
           },
           {
             label: 'Recovered',
