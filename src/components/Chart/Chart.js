@@ -12,7 +12,7 @@ const Chart = ({ country, countryData }) => {
   useEffect(() => {
     getDailyData();
   }, []);
-  const lineChart = dailyData.length ? (
+  const lineChart = dailyData ? (
     <Line
       height={190}
       data={{
