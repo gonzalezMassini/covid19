@@ -11,9 +11,7 @@ https://vigorous-montalcini-444a6f.netlify.app/
 ### Table of Contents
 
 - [Description](#description)
-- [How To Use](#how-to-use)
-- [References](#references)
-- [License](#license)
+- [Technologies](#technologies)
 - [Author Info](#author-info)
 
 ---
